@@ -9,7 +9,6 @@ defineProps<{
     class="youtube-video"
     :src="`https://www.youtube.com/embed/${videoId}`"
     title="YouTube video player"
-    frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   ></iframe>
@@ -19,5 +18,6 @@ defineProps<{
 iframe {
   width: 100%;
   aspect-ratio: 16/9;
+  border: 0px;
 }
 </style>
