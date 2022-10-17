@@ -17,7 +17,7 @@ const {data: tourDates} = await useFetch('/api/tour')
       ></video>
     </HeaderContainer>
     <NavBar/>
-    <div class="container">
+    <main class="container">
       <TourLink
         v-for="tourDate in tourDates"
         :key="tourDate.id"
@@ -26,7 +26,7 @@ const {data: tourDates} = await useFetch('/api/tour')
         :tickets="tourDate.tickets"
       />
       <Footer/>
-    </div>
+    </main>
   </div>
 </template>
 

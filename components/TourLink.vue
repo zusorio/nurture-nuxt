@@ -26,8 +26,11 @@ defineProps<{
   padding: 1rem 0;
 }
 
-.location {
-  font-size: 2rem;
+
+@media (min-width: 640px) {
+  .location {
+    font-size: 2rem;
+  }
 }
 
 .tour-link {

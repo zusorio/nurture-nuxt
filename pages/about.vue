@@ -4,7 +4,7 @@
 <template>
   <div>
     <HeaderContainer>
-      <div class="container about-text">
+      <main class="container about-text">
         <p>
           Bringing Nurture to life meant overcoming creative drought, depression and family illness. “It was an
           extensive
@@ -30,7 +30,7 @@
           feel like the world is beautiful and filled with possibility, and that I want to cherish every second that I
           have to be alive. That description doesn’t quite capture it, but it’s as close as I can get.”
         </p>
-      </div>
+      </main>
     </HeaderContainer>
     <NavBar/>
     <div class="container">

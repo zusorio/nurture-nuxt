@@ -7,12 +7,12 @@ const {data: videos} = await useFetch('/api/videos')
 <template>
   <div>
     <HeaderContainer>
-      <div class="videos">
+      <main class="videos">
         <div v-for="video in videos" :key="video.videoId">
           <h2 class="video-title">{{ video.title }}</h2>
           <YouTubeVideo :video-id="video.videoId"/>
         </div>
-      </div>
+      </main>
     </HeaderContainer>
     <NavBar/>
     <div class="container">

@@ -4,5 +4,4 @@ export default defineNuxtConfig({
         '@/assets/base.css',
         '@fontsource/lora/variable.css'
     ]
-
 })

@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <div class="container">
+    <main class="container">
 
       <h1>Privacy</h1>
 
@@ -148,7 +148,7 @@
       </p>
 
       <Footer/>
-    </div>
+    </main>
   </div>
 </template>
 
