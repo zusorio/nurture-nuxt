@@ -2,7 +2,7 @@
   <footer>
     <div class="footer-block">
       <NuxtLink target="_blank" href="https://twitter.com/porterrobinson">Twitter</NuxtLink>
-      <NuxtLink target="_blank" href="https://instagram.com/porterrobinson">Twitter</NuxtLink>
+      <NuxtLink target="_blank" href="https://instagram.com/porterrobinson">Instagram</NuxtLink>
       <NuxtLink  target="_blank" href="https://tiktok.com/@porterrobinson">TikTok</NuxtLink>
     </div>
 
