@@ -1,3 +1,6 @@
+# Hosted version
+The hosted version is available [here](https://nurture.zusor.io/)
+
 # Nuxt 3 Minimal Starter
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
