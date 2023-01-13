@@ -9,7 +9,7 @@
     <div class="footer-block footer-block-right">
       <NuxtLink target="_blank" href="/privacy">Privacy</NuxtLink>
       <NuxtLink target="_blank" href="/imprint">Imprint</NuxtLink>
-      <div>&copy; Sample Sized LLC</div>
+      <div>&copy; Sample Sized LLC / <NuxtLink target="_blank" href="http://zusor.io">Zusor.io</NuxtLink></div>
     </div>
   </footer>
 </template>
