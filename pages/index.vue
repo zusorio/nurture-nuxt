@@ -24,7 +24,8 @@
             { icon: 'simple-icons:applemusic', url: 'https://music.apple.com/us/album/worlds/1440857923', title: 'Apple Music'},
             { icon: 'simple-icons:deezer', url: 'https://www.deezer.com/en/album/8198764', title: 'Deezer'},
             { icon: 'simple-icons:youtubemusic', url: 'https://music.youtube.com/playlist?list=OLAK5uy_mOH9z9t_4xhSSiajaXGDrpW0n4x0YVgPw', title: 'YT Music'},
-          ]" link=""/>
+          ]"
+        />
       </div>
       <div class="promo-video">
         <h2 class="promo-video-text">

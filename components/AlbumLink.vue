@@ -2,7 +2,6 @@
 defineProps<{
   title: string;
   image: string;
-  link: string;
   links: {
     icon: string;
     title: string;
