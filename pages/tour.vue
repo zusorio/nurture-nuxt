@@ -24,6 +24,7 @@ const {data: tourDates} = await useFetch('/api/tour')
         :date="tourDate.date"
         :location="tourDate.location"
         :tickets="tourDate.tickets"
+        :ticket-sale-start="tourDate.ticketSaleStart"
       />
       <Footer/>
     </main>

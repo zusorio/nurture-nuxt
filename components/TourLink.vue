@@ -1,11 +1,24 @@
 <script lang="ts" setup>
 import { DateTime } from "luxon";
 
-defineProps<{
+const props = defineProps<{
   location: string;
   tickets: string;
   date: string;
+  ticketSaleStart: string;
 }>();
+
+const now = ref(DateTime.now());
+
+const start = computed(() => {
+  console.log(props);
+  return DateTime.fromISO(props.ticketSaleStart);
+});
+onMounted(() => {
+  setInterval(() => {
+    now.value = DateTime.now();
+  }, 1000);
+});
 </script>
 
 <template>
@@ -14,7 +27,11 @@ defineProps<{
       <div class="location">{{ location }}</div>
       <div>{{ DateTime.fromISO(date).setLocale('en-us').toLocaleString(DateTime.DATE_MED) }}</div>
     </div>
-    <NuxtLink class="tour-link" :href="tickets">Buy tickets</NuxtLink>
+    <NuxtLink v-if="now > start" class="tour-link" :href="tickets">Buy tickets</NuxtLink>
+    <div class="sale" v-else>
+      <div>Sale starting in</div>
+      <div class="sale-timer">{{start.diff(now).toFormat("d'd' hh'h' mm'm' ss's'")}}</div>
+    </div>
   </div>
 </template>
 
@@ -44,5 +61,14 @@ defineProps<{
 .tour-link:hover {
   background: #000;
   color: white;
+}
+
+.sale {
+  text-align: center;
+}
+
+.sale-timer {
+  font-variant: tabular-nums;
+  font-weight: bold;
 }
 </style>

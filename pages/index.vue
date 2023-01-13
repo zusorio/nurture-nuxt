@@ -1,31 +1,38 @@
-<script setup lang="ts">
-import logo from "@/assets/img/porter_robinson_logo.png";
-import nurtureArt from "@/assets/img/nurture.jpg";
-import worldsArt from "@/assets/img/worlds.jpeg";
-</script>
-
 <template>
   <div>
     <HeaderContainer>
-      <img class="header-image" :src="logo" alt="Porter Robinson Logo" />
+      <nuxt-img class="header-image" src="/porter_robinson_logo.png" alt="Porter Robinson Logo"/>
     </HeaderContainer>
-    <NavBar />
+    <NavBar/>
     <main class="container">
       <div class="albums-holder">
         <AlbumLink
-          :image="nurtureArt"
+          image="/nurture.jpg"
           title="Nurture"
-          link="https://open.spotify.com/album/4Hjqdhj5rh816i1dfcUEaM"
+          :links="[
+            { icon: 'simple-icons:spotify', url: 'https://open.spotify.com/album/4Hjqdhj5rh816i1dfcUEaM', title: 'Spotify'},
+            { icon: 'simple-icons:applemusic', url: 'https://music.apple.com/us/album/nurture/1550626757', title: 'Apple Music'},
+            { icon: 'simple-icons:deezer', url: 'https://www.deezer.com/us/album/224054812', title: 'Deezer'},
+            { icon: 'simple-icons:youtubemusic', url: 'https://music.youtube.com/playlist?list=OLAK5uy_kxKxwJ58EGkW3L2xmJFGi2efuZLjPeYuE', title: 'YT Music'},
+          ]"
         />
-        <AlbumLink :image="worldsArt" title="Worlds" link="https://open.spotify.com/album/7AJPV0L05IyIBid97AvwVD" />
+        <AlbumLink
+          image="/worlds.jpeg"
+          title="Worlds"
+          :links="[
+            { icon: 'simple-icons:spotify', url: 'https://open.spotify.com/album/7AJPV0L05IyIBid97AvwVD', title: 'Spotify'},
+            { icon: 'simple-icons:applemusic', url: 'https://music.apple.com/us/album/worlds/1440857923', title: 'Apple Music'},
+            { icon: 'simple-icons:deezer', url: 'https://www.deezer.com/en/album/8198764', title: 'Deezer'},
+            { icon: 'simple-icons:youtubemusic', url: 'https://music.youtube.com/playlist?list=OLAK5uy_mOH9z9t_4xhSSiajaXGDrpW0n4x0YVgPw', title: 'YT Music'},
+          ]" link=""/>
       </div>
       <div class="promo-video">
         <h2 class="promo-video-text">
           Watch the music video for Everything Goes On
         </h2>
-        <YouTubeVideo video-id="eEFVxI9lqjU" />
+        <YouTubeVideo video-id="eEFVxI9lqjU"/>
       </div>
-      <Footer />
+      <Footer/>
     </main>
   </div>
 </template>
