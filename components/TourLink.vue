@@ -11,7 +11,6 @@ const props = defineProps<{
 const now = ref(DateTime.now());
 
 const start = computed(() => {
-  console.log(props);
   return DateTime.fromISO(props.ticketSaleStart);
 });
 onMounted(() => {
